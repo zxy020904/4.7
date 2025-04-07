@@ -1,0 +1,82 @@
+/* 设置全局背景颜色 & 统一字体 */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* 容器最大宽度限制 */
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* 模块之间统一间距 */
+.section {
+    margin-top: 40px;
+}
+
+/* 标题与模块间距 */
+.page-title {
+    margin-bottom: 40px;
+}
+
+/* 卡片美化 */
+.card {
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 20px;
+}
+
+/* 输入框 & 按钮样式 */
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* 结果框样式 */
+.alert {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* 警告颜色 */
+.alert-danger {
+    background-color: #ffcccc;
+    border-left: 5px solid #ff4d4d;
+    color: #d32f2f;
+}
+
+.alert-success {
+    background-color: #ccffcc;
+    border-left: 5px solid #4caf50;
+    color: #2e7d32;
+}
+
+/* 居中图表 */
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}

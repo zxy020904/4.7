@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微博机器人检测</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="title-title text-center">
+            <h2 class="fw-bold display-7">微博机器人检测 🤖</h2>
+        </div>
+
+        <div class="card p-4 shadow-sm mb-4 section">
+            <h5 class="fw-bold mb-3">🔍 单个账号检测</h5>
+            <label class="form-label">请输入微博账号或链接：</label>
+            <input type="text" id="username" class="form-control">
+            <button class="btn btn-primary w-100 mt-3" onclick="detectBot()">开始检测</button>
+        </div>
+
+        <div id="result" class="alert d-none"></div>
+
+        <div class="card p-4 shadow-sm mb-4 section">
+            <h5 class="fw-bold mb-3">📂 批量检测</h5>
+            <label class="form-label">请上传 CSV 文件：</label>
+            <input type="file" id="fileUpload" class="form-control">
+            <button class="btn btn-success w-100 mt-3" onclick="uploadCSV()">上传并检测</button>
+        </div>
+
+
+        <div class="card p-4 shadow-sm mb-4 section">
+            <h5 class="fw-bold text-center mb-3">📊 统计雷达图</h5>
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
