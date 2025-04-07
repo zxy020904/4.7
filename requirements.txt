@@ -1,0 +1,7 @@
+pandas
+xlrd
+scikit-learn
+torch
+requests
+kaleido
+plotly
